@@ -25,4 +25,5 @@ Suggests:
     nlme,
     AER,
     plm,
-    testthat
+    testthat,
+    nlme
