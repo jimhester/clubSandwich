@@ -1,9 +1,24 @@
 language: r
 sudo: false
 cache: packages
+env: R_LIBS_USER= R_LIBS_SITE=~/R/Library:/usr/local/lib/R/site-library:/usr/lib/R/site-library
 
-r_packages:
+r_packages: 
+  - Formula
+  - SparseM
+  - MatrixModels
+  - nlme
+  - lme4
+  - pbkrtest
+  - quantreg
   - covr
 
 after_success:
   - Rscript -e 'covr::codecov()'
+
+warnings_are_errors: true
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
