@@ -16,13 +16,18 @@ Depends: R (>= 3.2.0)
 License: GPL-3
 VignetteBuilder: knitr
 LazyData: true
-Suggests: 
-    Formula,
-    knitr,
-    car,
-    metafor,
-    robumeta,
-    nlme,
-    AER,
-    plm,
-    testthat
+Suggests:
+  AER,
+  Formula,
+  car,
+  knitr,
+  metafor,
+  plm,
+  robumeta,
+  testthat,
+  MatrixModels,
+  SparseM,
+  lme4,
+  nlme,
+  pbkrtest,
+  quantreg
